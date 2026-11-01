@@ -12318,5 +12318,21 @@
   "licenza": null,
   "linguaggio": null,
   "fonte": "koshurai.official 14/10/2026 (reel DeeYwGItr_h)"
+ },
+ {
+  "tipo": "sito",
+  "macro": "H",
+  "macro_nome": "Dev tools, produttività & librerie",
+  "nome": "agent-qa",
+  "cosa_fa": "CLI di QA per web, Android e iOS tramite istruzioni in linguaggio naturale, con memoria persistente e auto-miglioramento. Richiede Node.js 24+. La CLI è gratuita; inferenza dei modelli e servizi opzionali per dispositivi hanno costi separati. FSL-1.1-ALv2 limita gli usi commerciali in concorrenza.",
+  "quando_usarlo": "Per verificare percorsi utente e regressioni tramite CLI, dashboard o MCP locale su stdio, riutilizzando conoscenze tra le esecuzioni.",
+  "url": "https://vostride.com",
+  "stelle": null,
+  "ultimo_push": null,
+  "attivita": "sito web",
+  "attivita_emoji": "🌐",
+  "licenza": null,
+  "linguaggio": null,
+  "fonte": "Documentazione ufficiale: https://vostride.com/docs/agent-qa; codice e licenza: https://github.com/vostride/agent-qa (verificati il 2026-11-01)."
  }
 ]

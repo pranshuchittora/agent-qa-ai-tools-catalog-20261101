@@ -3690,6 +3690,11 @@
     "quando_usarlo": "Cuando quieres sustituir varias pequeñas utilidades de Mac por una única app open source.",
     "sorgente": "a55ce5721fc2"
   },
+  "vostride.com": {
+    "cosa_fa": "CLI de QA para web, Android e iOS con instrucciones en lenguaje natural, memoria persistente y automejora. Requiere Node.js 24+. La CLI es gratuita; la inferencia de modelos y los servicios opcionales de dispositivos tienen costes adicionales. FSL-1.1-ALv2 restringe los usos comerciales que compiten con el producto.",
+    "quando_usarlo": "Para comprobar recorridos de usuario y regresiones mediante CLI, panel o una integración MCP local por stdio, reutilizando conocimiento entre ejecuciones.",
+    "sorgente": "7afe6e529691"
+  },
   "vrgamegirl19/vrgdg-seedvr2-tensorrt-studio": {
     "cosa_fa": "Estudio local (JavaScript + FastAPI) para restauración y upscaling de vídeo con SeedVR2 acelerado por TensorRT, con vista previa antes/después y reanudación de los renders interrumpidos.",
     "quando_usarlo": "Cuando debes restaurar o ampliar vídeos antiguos en tu GPU NVIDIA.",

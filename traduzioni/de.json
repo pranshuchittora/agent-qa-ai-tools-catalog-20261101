@@ -3690,6 +3690,11 @@
     "quando_usarlo": "Wenn du mehrere kleine Mac-Utilitys durch eine einzige Open-Source-App ersetzen willst.",
     "sorgente": "a55ce5721fc2"
   },
+  "vostride.com": {
+    "cosa_fa": "CLI für QA von Web-, Android- und iOS-Apps mit natürlichsprachlichen Anweisungen, dauerhaftem Gedächtnis und Selbstverbesserung. Erfordert Node.js 24+. Die CLI ist kostenlos; Modellinferenz und optionale Gerätedienste kosten extra. FSL-1.1-ALv2 beschränkt konkurrierende kommerzielle Nutzung.",
+    "quando_usarlo": "Zum Prüfen von Nutzerabläufen und Regressionen über CLI, Dashboard oder eine lokale MCP-Anbindung über stdio, wobei Wissen zwischen Testläufen wiederverwendet wird.",
+    "sorgente": "7afe6e529691"
+  },
   "vrgamegirl19/vrgdg-seedvr2-tensorrt-studio": {
     "cosa_fa": "Lokales Studio (JavaScript + FastAPI) für Videorestaurierung und Upscaling mit TensorRT-beschleunigtem SeedVR2, mit Vorher/Nachher-Vorschau und Fortsetzung abgebrochener Renderings.",
     "quando_usarlo": "Wenn du alte Videos auf deiner NVIDIA-GPU restaurieren oder hochskalieren musst.",

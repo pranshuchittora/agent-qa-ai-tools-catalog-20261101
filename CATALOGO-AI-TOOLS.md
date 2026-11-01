@@ -2,7 +2,7 @@
 
 > Catalogo unificato di **repository GitHub** e **siti/servizi web** raccolti dai
 > reel e link salvati in chat.
-> **725 repository** + **45 siti web**, organizzati per categoria operativa.
+> **725 repository** + **46 siti web**, organizzati per categoria operativa.
 > Stato attività verificato il **2026-10-15**. Legenda: 🟢 attivo (push ≤12 mesi) · 🟡 rallentato · 🔴 fermo · ⚫ archiviato · 🌐 sito web.
 
 ## Indice
@@ -13,7 +13,7 @@
 - **OCR & parsing documenti** (21)
 - **Generazione media (video, immagini, 3D, voce)** (121)
 - **Sicurezza & supply-chain** (49)
-- **Dev tools, produttività & librerie** (230)
+- **Dev tools, produttività & librerie** (231)
 - **Finanza & trading AI** (12)
 - **Ricerca AI, world models & dati vettoriali** (36)
 
@@ -778,6 +778,7 @@
 | [SceneAI](https://sceneai.art) | Libreria a pagamento di prompt pronti per generare sezioni web e landing page animate, aggiornata settimanalmente; alcune anteprime sono consultabili senza account. | Quando cerchi un punto di partenza collaudato per far generare una pagina invece di scrivere il prompt da zero. | 🌐 sito |
 | [NameThatUI](https://namethatui.com) | Dizionario visuale dei componenti di interfaccia web e macOS: si descrive un elemento a parole e restituisce il nome corretto, il simbolo API corrispondente e un prompt pronto per il coding agent. | Quando non si ricorda il nome di un componente UI e serve descriverlo con precisione a un coding agent. | 🌐 sito |
 | [Mobbin](https://mobbin.com) | Archivio di schermate di app e siti reali (registrazioni, dashboard, pagamenti) con MCP ufficiale per Claude e Claude Code, che permette all'agente di studiare esempi prima di disegnare un'interfaccia. MCP solo nei piani a pagamento. | Quando vuoi che l'agente basi un design su pattern reali invece di inventarlo. | 🌐 sito |
+| [agent-qa](https://vostride.com) | CLI di QA per web, Android e iOS tramite istruzioni in linguaggio naturale, con memoria persistente e auto-miglioramento. Richiede Node.js 24+. La CLI è gratuita; inferenza dei modelli e servizi opzionali per dispositivi hanno costi separati. FSL-1.1-ALv2 limita gli usi commerciali in concorrenza. | Per verificare percorsi utente e regressioni tramite CLI, dashboard o MCP locale su stdio, riutilizzando conoscenze tra le esecuzioni. | 🌐 sito |
 
 ## Finanza & trading AI
 
