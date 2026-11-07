@@ -52,7 +52,7 @@ vuol dire il file che ti spetta.
 - `siti-web.json` — siti web (non-repo). Record: `id, sito, url, descrizione, categoria, fonte, macro, uso`.
 - `siti-personali.json` — voci non-dev, **gitignorato** (vedi §4).
 - `chat-messaggi.csv` — catalogo grezzo dei messaggi, **gitignorato**. Può non esistere.
-- `instagram-profili.json` — stato del monitoraggio profili. Per ogni profilo: `{handle, ultimo_controllo, reel_visti: [shortcode], reel_catalogati: [shortcode]}`. Crealo se non esiste.
+- `instagram-profili.json` — stato del monitoraggio profili. Per ogni profilo: `{handle, ultimo_controllo, reel_visti: [shortcode], reel_catalogati: [shortcode], reel_scartati: {shortcode: motivo}}`. Ogni shortcode di `reel_visti` sta in `reel_catalogati` oppure fra le chiavi di `reel_scartati`, mai in nessuno dei due. Crealo se non esiste.
 - `gh-meta.json` — metadati attività GitHub, per chiave `owner/nome` in minuscolo.
 - `scripts/fetch_gh_meta.py` — recupera stelle/ultimo push/licenza (merge incrementale).
 - `scripts/build_catalog.py` — genera `catalogo-unificato.json` + `CATALOGO-AI-TOOLS.md` e **aggiorna la skill globale** `~/.agents/skills/ai-tools-catalog/` (Claude Code e Antigravity la vedono tramite symlink).
@@ -126,7 +126,7 @@ per scoprire reel nuovi pubblicati da quei creator.
    (`Simone Rizzo AI` è `simorizzo_ai`): normalizza sempre in handle Instagram.
 2. **Carica/crea lo stato** `instagram-profili.json` (se non sei il manutentore:
    `instagram-profili.local.json`, e se non esiste crealo copiando `instagram-profili.json`). Per ogni handle tieni `reel_visti` (tutti gli
-   shortcode già incontrati) e `reel_catalogati`.
+   shortcode già incontrati), `reel_catalogati` e `reel_scartati` (dizionario shortcode → motivo breve).
 3. **Per ogni profilo** (se Instagram è loggato): naviga su `https://www.instagram.com/{handle}/reels/`
    e scrolla la griglia raccogliendo gli shortcode dai link `/reel/CODE/` (e `/p/CODE/`). Esempio:
 ```js
@@ -147,9 +147,12 @@ async () => {
    esplodere, e segnala il cap. Resetta `window.__rs` tra un profilo e l'altro.
 4. **Filtra i nuovi**: shortcode non presenti né in `reel_visti` né già nel catalogo. Questi confluiscono
    nello stesso processo della Fase A (step 3–4): leggi la caption e cataloga **solo** i reel che
-   riguardano un repo/tool; gli altri registrali come "visti" senza catalogare (non rilevanti).
+   riguardano un repo/tool; gli altri registrali come "visti" senza catalogare, scrivendo in
+   `reel_scartati` il motivo breve (es. `non-tool: notizia`, `doppione di id 425`, `repo 404`,
+   `nessun repo nella caption`, `in sospeso: decisione di Marco`). Per un doppione, aggiungi
+   l'handle alla `fonte` della voce esistente (`; handle GG/MM/AAAA (reel CODE)`) se non c'è già.
 5. **Aggiorna `instagram-profili.json`**: aggiungi i nuovi shortcode a `reel_visti`, quelli catalogati a
-   `reel_catalogati`, e imposta `ultimo_controllo` alla data di oggi, nel formato `AAAA-MM-GG`.
+   `reel_catalogati`, gli altri a `reel_scartati` con il motivo, e imposta `ultimo_controllo` alla data di oggi, nel formato `AAAA-MM-GG`.
 
 Se i profili mostrano il **login wall** (Instagram non loggato), salta la Fase B, segnalalo nel
 riepilogo e prosegui con le fasi comuni.

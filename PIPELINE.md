@@ -55,7 +55,7 @@ falls back to neutral defaults.
 | `github-repos.json` | Catalogued repos (`id, progetto, descrizione, url, categoria, fonte, macro, uso`) |
 | `siti-web.json` | Non-repo websites (same fields, `sito` instead of `progetto`) |
 | `gh-meta.json` | GitHub metadata (stars, last push, license) by `owner/name` (plus `gh-meta.local.json` for your own entries) |
-| `instagram-profili.json` | Profile-monitoring state (handle → reels seen/catalogued, last check) |
+| `instagram-profili.json` | Profile-monitoring state (handle → reels seen, catalogued, discarded with a short reason in `reel_scartati`; last check) |
 | `chat-messaggi.csv` | Raw message dump (gitignored) |
 | `catalogo-unificato.json` / `CATALOGO-AI-TOOLS.md` / `docs/` | Generated outputs (`docs/` holds the web page, one per language, from the template `scripts/pagina-catalogo.html`) |
 | `traduzioni/<lang>.json` | Translations of the entries (en, es, de, fr), each with a fingerprint of its Italian source |

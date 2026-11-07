@@ -451,6 +451,436 @@
   },
   {
     "id": 52,
+    "sito": "Motion",
+    "url": "https://motion.dev",
+    "categoria": "Dev/Web",
+    "descrizione": "Libreria di animazione per JavaScript, React e Vue (ex Framer Motion) con documentazione ed esempi, usabile anche da un coding agent per implementare transizioni.",
+    "fonte": "ai.honeycove 29/10/2026 (reel DfGjKw7uAl7)",
+    "macro": "H",
+    "uso": "Quando vuoi aggiungere transizioni e animazioni fluide a un'interfaccia web."
+  },
+  {
+    "id": 53,
+    "sito": "Manus",
+    "url": "https://manus.im",
+    "categoria": "Agenti AI",
+    "descrizione": "Agente AI generalista che, tra le altre cose, trasforma la descrizione di un sito in un'applicazione full stack funzionante da rifinire conversando.",
+    "fonte": "ai.honeycove 29/10/2026 (reel DfGjKw7uAl7)",
+    "macro": "B",
+    "uso": "Quando vuoi ottenere un prototipo di applicazione web partendo da una descrizione."
+  },
+  {
+    "id": 54,
+    "sito": "OpenArt",
+    "url": "https://openart.ai",
+    "categoria": "AI/Video",
+    "descrizione": "Piattaforma di generazione di immagini e video; la modalità director crea video fino a cinque minuti da una descrizione o da foto, gestendo scene, movimenti di camera, voce e musica e accettando correzioni in conversazione.",
+    "fonte": "ai.honeycove 26/10/2026 (reel De-vUWvO1LV)",
+    "macro": "F",
+    "uso": "Quando vuoi un video narrativo completo, per esempio un tour di un immobile, senza montare le clip a mano."
+  },
+  {
+    "id": 55,
+    "sito": "Uncensured AI",
+    "url": "https://uncensuredai.com",
+    "categoria": "AI/LLM",
+    "descrizione": "Provider italiano di modelli open source privati dei filtri di rifiuto, usabili da interfaccia web o via API compatibile OpenAI.",
+    "fonte": "ai_swarm_solutions 05/11/2026 (reel DfXrkJLNQJq)",
+    "macro": "C",
+    "uso": "Quando devi usare un LLM per analisi di sicurezza o codice in laboratorio e i modelli commerciali rifiutano la richiesta."
+  },
+  {
+    "id": 56,
+    "sito": "Kolibri-1 (Aleph Alpha)",
+    "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+    "categoria": "AI/LLM",
+    "descrizione": "Modello open-weights Mixture-of-Experts da 78B parametri totali e circa 3,5B attivi, focalizzato su tedesco e inglese, con modalità di ragionamento, tool calling e contesto fino a circa 1M token; licenza Apache 2.0.",
+    "fonte": "ai_swarm_solutions 04/11/2026 (reel DfVHByEtP78)",
+    "macro": "C",
+    "uso": "Quando cerchi un modello europeo con pesi aperti per agenti in ambienti regolamentati."
+  },
+  {
+    "id": 57,
+    "sito": "Nemotron 3.5 Bolt E4B (NVIDIA)",
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "categoria": "LLM locale",
+    "descrizione": "Modello compatto NVIDIA (circa 4B parametri effettivi, derivato da Gemma 4 E4B) ottimizzato per agenti locali con tool calling, che quantizzato occupa pochi GB e può girare su CPU e RAM comune.",
+    "fonte": "ai_swarm_solutions 01/11/2026 (reel DfNdSY6Np0m)",
+    "macro": "C",
+    "uso": "Quando vuoi un piccolo modello agentico da far girare su un portatile o un mini PC senza GPU."
+  },
+  {
+    "id": 58,
+    "sito": "Abliteration.ai",
+    "url": "https://docs.abliteration.ai/models",
+    "categoria": "AI/LLM",
+    "descrizione": "Servizio API (compatibile OpenAI) di modelli abliterati, cioè con le direzioni di rifiuto rimosse dai pesi, mantenendo il tool calling; si collega a client come Cline o Claude Code.",
+    "fonte": "ai_swarm_solutions 28/10/2026 (reel DfDHRp5Ndgo)",
+    "macro": "C",
+    "uso": "Quando un agente deve lavorare su compiti di sicurezza che i modelli standard rifiutano."
+  },
+  {
+    "id": 59,
+    "sito": "Liquid AI Models (LFM)",
+    "url": "https://www.liquid.ai/models",
+    "categoria": "LLM locale",
+    "descrizione": "Catalogo dei modelli Liquid Foundation Models, ad architettura non transformer con memoria lineare, tra cui varianti da 24B con capacità agentiche pensate per girare su CPU e RAM di sistema.",
+    "fonte": "ai_swarm_solutions 21/10/2026 (reel Dew_yZPKhbS)",
+    "macro": "C",
+    "uso": "Quando cerchi modelli efficienti per inferenza locale su CPU senza GPU dedicata."
+  },
+  {
+    "id": 60,
+    "sito": "Clef (Cloudflare)",
+    "url": "https://huggingface.co/Cloudflare/clef",
+    "categoria": "AI/LLM",
+    "descrizione": "Modelli di decisione open-weights (Clef e Clef-flash, Apache 2.0) che non generano testo ma rispondono a domande tipizzate su uno stato (testo, codice, log, immagini) con probabilità calibrate in un solo passaggio; disponibili anche su Workers AI.",
+    "fonte": "ai_swarm_solutions 15/10/2026 (reel DehoyzrKWy4)",
+    "macro": "B",
+    "uso": "Quando un agente deve prendere decisioni rapide di classificazione o instradamento prima di chiamare un LLM."
+  },
+  {
+    "id": 61,
+    "sito": "HeyGen",
+    "url": "https://www.heygen.com",
+    "categoria": "AI/Video",
+    "descrizione": "Piattaforma di generazione video con avatar AI; il modello HeyGen Video 1.0 crea clip fino a 15 secondi da testo, immagine o referenze.",
+    "fonte": "dariofontanel.ai 21/10/2026 (reel Dev6073D1as)",
+    "macro": "F",
+    "uso": "Quando servono brevi clip video generate da testo o immagini per contenuti e marketing."
+  },
+  {
+    "id": 62,
+    "sito": "Seedboard",
+    "url": "https://www.seedboard.ai",
+    "categoria": "AI/Immagini",
+    "descrizione": "Studio di AI generativa italiano per brand: crea modelli fotorealistici, shooting e campagne foto e video coordinati da agenti, con un agente director che imposta inquadrature, luci e location.",
+    "fonte": "dariofontanel.ai 19/10/2026 (reel DertsFQEchi)",
+    "macro": "F",
+    "uso": "Quando devi produrre materiale fotografico o video per campagne di prodotto senza un set reale."
+  },
+  {
+    "id": 63,
+    "sito": "Kitbitz",
+    "url": "https://kitbitz.art",
+    "categoria": "Dev/Design",
+    "descrizione": "Raccolta di oltre 2.000 illustrazioni disegnate a mano in 13 kit, in SVG e PNG con licenza CC0, consultabile anche da un server MCP pubblico in sola lettura.",
+    "fonte": "gabriaprile 04/11/2026 (reel DfU9Q1UjOAO)",
+    "macro": "H",
+    "uso": "Quando cerchi illustrazioni libere da usare in un progetto, anche facendole trovare a Claude via MCP."
+  },
+  {
+    "id": 64,
+    "sito": "Public Domain Image Archive",
+    "url": "https://pdimagearchive.org",
+    "categoria": "Dev/Design",
+    "descrizione": "Archivio curato da The Public Domain Review di oltre diecimila immagini storiche di pubblico dominio provenienti da musei, biblioteche e archivi.",
+    "fonte": "gabriaprile 04/11/2026 (reel DfU9Q1UjOAO)",
+    "macro": "H",
+    "uso": "Quando cerchi immagini storiche riutilizzabili liberamente, anche per lavoro."
+  },
+  {
+    "id": 65,
+    "sito": "ManyChat",
+    "url": "https://manychat.com",
+    "categoria": "Agenti AI",
+    "descrizione": "Piattaforma commerciale di automazione dei messaggi per Instagram, Messenger e WhatsApp tramite le API ufficiali di Meta; integra un blocco Claude per rispondere ai DM con testi generati.",
+    "fonte": "gabriaprile 03/11/2026 (reel DfSDre5AGY4)",
+    "macro": "B",
+    "uso": "Quando vuoi automatizzare le risposte ai messaggi diretti di Instagram."
+  },
+  {
+    "id": 66,
+    "sito": "Prompt Motion",
+    "url": "https://prompt-motion.com",
+    "categoria": "AI/Video",
+    "descrizione": "Galleria gratuita di video di motion graphics realizzati con Claude, ciascuno con il prompt o la skill che l'ha generato e il link all'autore; curata da @p4nthera_.",
+    "fonte": "gabriaprile 03/11/2026 (reel DfRoPpPGR_I)",
+    "macro": "F",
+    "uso": "Quando cerchi esempi di prompt per animazioni generate con Claude."
+  },
+  {
+    "id": 67,
+    "sito": "Submarine Cable Map",
+    "url": "https://www.submarinecablemap.com",
+    "categoria": "Sicurezza/Rete",
+    "descrizione": "Mappa interattiva gratuita di TeleGeography dei cavi sottomarini: per ogni cavo mostra percorso, lunghezza, anno e proprietari, con ricerca per paese e approdo.",
+    "fonte": "gabriaprile 31/10/2026 (reel DfJ6AgtETK1)",
+    "macro": "H",
+    "uso": "Quando vuoi vedere quali cavi internet arrivano in un paese o in una città."
+  },
+  {
+    "id": 68,
+    "sito": "Blender MCP Server (Blender Lab)",
+    "url": "https://www.blender.org/lab/mcp-server/",
+    "categoria": "Robotica/3D",
+    "descrizione": "Server MCP ufficiale del Blender Lab che collega Claude (connettore di Claude Desktop) e altri client MCP a Blender aperto sullo stesso computer, per costruire e animare scene a comando; esegue codice generato dal modello dentro Blender.",
+    "fonte": "gabriaprile 29/10/2026 (reel DfEwRYcDs8c)",
+    "macro": "F",
+    "uso": "Quando vuoi far modellare o animare a un agente una scena in Blender."
+  },
+  {
+    "id": 69,
+    "sito": "Magnific",
+    "url": "https://www.magnific.com",
+    "categoria": "AI/Video",
+    "descrizione": "Servizio commerciale di generazione e miglioramento di immagini e video che offre anche modelli terzi come Seedance, con video di riferimento; si paga a crediti.",
+    "fonte": "gabriaprile 29/10/2026 (reel DfEwRYcDs8c)",
+    "macro": "F",
+    "uso": "Quando vuoi trasformare un'animazione grezza in video realistico con un modello di terzi."
+  },
+  {
+    "id": 70,
+    "sito": "Kling AI",
+    "url": "https://kling.ai",
+    "categoria": "AI/Video",
+    "descrizione": "Servizio commerciale di generazione video da testo e immagini (image-to-video), con piano gratuito a crediti limitati e filigrana.",
+    "fonte": "gabriaprile 28/10/2026 (reel DfCZNtFDYlT)",
+    "macro": "F",
+    "uso": "Quando vuoi animare un'immagine in una breve clip video."
+  },
+  {
+    "id": 71,
+    "sito": "skills.sh",
+    "url": "https://www.skills.sh",
+    "categoria": "Claude Code Skill",
+    "descrizione": "Catalogo pubblico di skill per agenti con classifica per installazioni, interrogato dalla skill Find Skills di Vercel; conteggi e copie vanno verificati prima di installare.",
+    "fonte": "gabriaprile 24/10/2026 (reel De4hdGgCVc5)",
+    "macro": "A",
+    "uso": "Quando cerchi una skill esistente per un compito, controllando autore e originale."
+  },
+  {
+    "id": 72,
+    "sito": "ElevenLabs",
+    "url": "https://elevenlabs.io",
+    "categoria": "AI/TTS",
+    "descrizione": "Piattaforma commerciale di sintesi vocale: modello Eleven v4 dirigibile con tag in linea, Voice Design da descrizione testuale e clonazione rapida della voce; oltre 90 lingue.",
+    "fonte": "gabriaprile 23/10/2026 (reel De1MvgcDMH7)",
+    "macro": "F",
+    "uso": "Quando ti serve una voce sintetica espressiva o una voce clonata."
+  },
+  {
+    "id": 73,
+    "sito": "Qwen Chat",
+    "url": "https://chat.qwen.ai",
+    "categoria": "AI/LLM",
+    "descrizione": "Assistente gratuito di Alibaba nel browser e in app: chat, generazione di immagini e video, pagine web con anteprima, ricerca approfondita e analisi di documenti; uso solo privato e non commerciale secondo i termini.",
+    "fonte": "gabriaprile 18/10/2026 (reel DeoUkdiCm22)",
+    "macro": "C",
+    "uso": "Quando vuoi sperimentare gratis funzioni multimodali, senza dati riservati."
+  },
+  {
+    "id": 74,
+    "sito": "Kie.ai",
+    "url": "https://kie.ai",
+    "categoria": "AI/Video",
+    "descrizione": "Aggregatore di API a crediti per modelli generativi di terzi (video come Seedance e WAN, immagini, musica), usato per generare clip pagando per singola generazione.",
+    "fonte": "gabriaprile 17/10/2026 (reel Del9cAYibRE)",
+    "macro": "F",
+    "uso": "Quando vuoi usare modelli video di terzi via API pagando a consumo."
+  },
+  {
+    "id": 75,
+    "sito": "Claude Academy",
+    "url": "https://academy.claude.com",
+    "categoria": "AI/LLM",
+    "descrizione": "Corsi gratuiti di Anthropic per imparare a usare Claude, dalle basi a Claude Code, API e MCP.",
+    "fonte": "guglielmo.builds 03/11/2026 (reel DfRoKkcNk1o)",
+    "macro": "A",
+    "uso": "Quando vuoi una formazione ufficiale e strutturata su Claude e i suoi strumenti per sviluppatori."
+  },
+  {
+    "id": 76,
+    "sito": "Flint (Recursive)",
+    "url": "https://huggingface.co/RecursiveSI/flint",
+    "categoria": "LLM locale",
+    "descrizione": "Modello di coding a pesi aperti di Recursive: mixture-of-experts da 40B parametri con circa 2,5B attivi per token, contesto di 262K, uso di tool e agenti; licenza Apache 2.0, pensato per girare in locale.",
+    "fonte": "marc.kaz 24/10/2026 (reel De4oMnBM_8f)",
+    "macro": "C",
+    "uso": "Quando vuoi un modello di coding locale veloce da usare con un agente senza costi a consumo."
+  },
+  {
+    "id": 77,
+    "sito": "Experiential",
+    "url": "https://platform.experientiallabs.ai",
+    "categoria": "AI/LLM",
+    "descrizione": "Piattaforma di accesso API a modelli di terze parti, con playground e osservabilità; offre fra gli altri Gemini 4 Argon, provabile gratuitamente.",
+    "fonte": "marc.kaz 15/10/2026 (reel DehVyJ9sysw)",
+    "macro": "C",
+    "uso": "Quando vuoi confrontare un modello nuovo con quello che usi di solito sugli stessi prompt."
+  },
+  {
+    "id": 78,
+    "sito": "Sandcastles",
+    "url": "https://sandcastles.ai",
+    "categoria": "AI/Video",
+    "descrizione": "Servizio a pagamento che analizza i video virali di una nicchia e suggerisce cosa pubblicare, con dati sulle prestazioni; collegabile a Claude come connettore.",
+    "fonte": "micheleparigi.ai 31/10/2026 (reel DfKDRPnOwy6)",
+    "macro": "F",
+    "uso": "Quando pianifichi contenuti short-form e vuoi basarti su ciò che funziona davvero nella tua nicchia."
+  },
+  {
+    "id": 79,
+    "sito": "LFM2.5-24B-A2B (Liquid AI)",
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+    "categoria": "LLM locale",
+    "descrizione": "Modello di ragionamento a pesi aperti di Liquid AI da 24B parametri con circa 2,4B attivi, contesto di 131K token, pensato per agenti in locale; licenza LFM Open License v1.0, supportato da llama.cpp, MLX e vLLM.",
+    "fonte": "simorizzo_ai 19/10/2026 (reel Ders3tHjiUC)",
+    "macro": "C",
+    "uso": "Quando vuoi un modello agentico che giri velocemente su un portatile."
+  },
+  {
+    "id": 80,
+    "sito": "Muse Spark Open (Meta)",
+    "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+    "categoria": "AI/LLM",
+    "descrizione": "Modello multimodale open-weight di Meta (816 miliardi di parametri totali, 42 attivi, architettura MoE) che accetta testo e immagini; su Hugging Face ci sono i pesi, una versione NVFP4 e conversioni GGUF/MLX della community. Licenza Meta personalizzata.",
+    "fonte": "simorizzo_ai 16/10/2026 (reel DekAyUwgbHh)",
+    "macro": "C",
+    "uso": "Quando cerchi un modello open di fascia alta da servire su infrastruttura propria."
+  },
+  {
+    "id": 81,
+    "sito": "Emma-6 (Egomnia)",
+    "url": "https://huggingface.co/egomnia/emma-6",
+    "categoria": "AI/LLM",
+    "descrizione": "Piccolo modello linguistico sperimentale italiano di Egomnia (circa 1,55 miliardi di parametri, contesto di 4.096 token), addestrato solo su testo italiano; i pesi sono su Hugging Face con licenza OpenRAIL. Le prove pubbliche ne mostrano errori frequenti anche su domande semplici.",
+    "fonte": "simorizzo_ai 15/10/2026 (reel DehAJ2aj7yi)",
+    "macro": "C",
+    "uso": "Quando vuoi studiare o confrontare un piccolo modello addestrato solo in italiano, non per uso produttivo."
+  },
+  {
+    "id": 82,
+    "sito": "OpusClip",
+    "url": "https://www.opus.pro",
+    "categoria": "AI/Video",
+    "descrizione": "Servizio web che prende un video lungo, o il suo link, ne individua i momenti salienti e produce clip brevi già montate e sottotitolate per i social, assegnando a ciascuna un punteggio per scegliere quali pubblicare prima.",
+    "fonte": "themattvision 20/10/2026 (reel DeuSVEQIn5s)",
+    "macro": "F",
+    "uso": "Quando devi ricavare molti short verticali da podcast, webinar o video lunghi."
+  },
+  {
+    "id": 83,
+    "sito": "Underdog Bark 3.0",
+    "url": "https://huggingface.co/ConwayResearch/Underdog-Bark-3.0",
+    "categoria": "AI/Audio",
+    "descrizione": "Modelli open (CC-BY-4.0) di speech-to-text in inglese di Conway Research, derivati da NVIDIA Parakeet: la versione base pesa 163 MB e ci sono varianti Clean (toglie intercalari e false partenze), Plus e Pro. Girano in locale su Apple Silicon (MLX/Core ML) e su Windows/Linux con PyTorch.",
+    "fonte": "koshurai.official 26/10/2026 (reel De9YXEvSODn)",
+    "macro": "F",
+    "uso": "Quando serve trascrizione vocale offline, veloce e leggera, per dettatura, sottotitoli o note di riunione."
+  },
+  {
+    "id": 84,
+    "sito": "21st.dev",
+    "url": "https://21st.dev",
+    "categoria": "Dev/Design",
+    "descrizione": "Libreria e marketplace di componenti UI React/Tailwind (anche animati e 3D), con generazione di componenti via AI e integrazione MCP per gli agenti di coding.",
+    "fonte": "simonestavolo.ai 29/09/2026 (reel Dcs_0FgKJJM)",
+    "macro": "H",
+    "uso": "Quando si cercano hero section e componenti già pronti da incollare in un sito."
+  },
+  {
+    "id": 85,
+    "sito": "Lindy",
+    "url": "https://www.lindy.ai",
+    "categoria": "Agenti AI",
+    "descrizione": "Piattaforma commerciale per costruire agenti AI di automazione a partire da template: risposte email, prenotazioni, digest Slack, assistente riunioni, notifiche lead.",
+    "fonte": "simonestavolo.ai 30/08/2026 (reel DbYX7xOKtIt)",
+    "macro": "B",
+    "uso": "Quando si vogliono automatizzare compiti ripetitivi d'ufficio senza scrivere codice."
+  },
+  {
+    "id": 86,
+    "sito": "PAI (Utopai Studios)",
+    "url": "https://www.utopaistudios.com/pai",
+    "categoria": "AI/Video",
+    "descrizione": "Strumento commerciale di produzione video AI che parte da una sceneggiatura intera: costruisce personaggi coerenti, genera uno storyboard da approvare e poi renderizza sequenze multi-scena.",
+    "fonte": "simonestavolo.ai 09/08/2026 (reel Da2qt3UKUGI)",
+    "macro": "F",
+    "uso": "Quando si vuole generare un breve film coerente da un copione invece di clip isolate."
+  },
+  {
+    "id": 87,
+    "sito": "Google AI Studio",
+    "url": "https://aistudio.google.com",
+    "categoria": "AI/LLM",
+    "descrizione": "Ambiente web di Google per provare i modelli Gemini, ottenere chiavi API e costruire web app descrivendole in linguaggio naturale.",
+    "fonte": "simonestavolo.ai 06/07/2026 (reel DaNP39fK7fV)",
+    "macro": "C",
+    "uso": "Quando si vuole prototipare con Gemini o ottenere una chiave API gratuita."
+  },
+  {
+    "id": 88,
+    "sito": "Google Opal",
+    "url": "https://opal.google",
+    "categoria": "Dev/Workflow",
+    "descrizione": "Strumento no-code di Google Labs per costruire mini-app e automazioni AI collegando passaggi in linguaggio naturale.",
+    "fonte": "simonestavolo.ai 06/07/2026 (reel DaNP39fK7fV)",
+    "macro": "H",
+    "uso": "Quando si vuole creare una piccola automazione AI senza programmare."
+  },
+  {
+    "id": 89,
+    "sito": "Pomelli (Google Labs)",
+    "url": "https://labs.google/pomelli",
+    "categoria": "AI/Immagini",
+    "descrizione": "Esperimento di Google Labs che analizza il sito di un'attività per ricavarne l'identità di brand e genera post e campagne social coerenti.",
+    "fonte": "simonestavolo.ai 06/07/2026 (reel DaNP39fK7fV)",
+    "macro": "F",
+    "uso": "Quando si devono produrre contenuti social in linea con il proprio brand."
+  },
+  {
+    "id": 90,
+    "sito": "NotebookLM",
+    "url": "https://notebooklm.google.com",
+    "categoria": "AI/Documents",
+    "descrizione": "Strumento di Google che lavora sulle fonti caricate (documenti, PDF, link) e ne ricava riassunti, risposte citate, panoramiche audio stile podcast e video.",
+    "fonte": "simonestavolo.ai 06/07/2026 (reel DaNP39fK7fV)",
+    "macro": "D",
+    "uso": "Quando si vogliono trasformare documenti in riassunti, podcast o video esplicativi."
+  },
+  {
+    "id": 91,
+    "sito": "Submagic",
+    "url": "https://www.submagic.co",
+    "categoria": "AI/Video",
+    "descrizione": "Servizio commerciale di editing video che genera sottotitoli sincronizzati e personalizzabili, taglia i silenzi e aggiunge zoom dinamici e b-roll.",
+    "fonte": "simonestavolo.ai 03/07/2026 (reel DaIi7LKKGA0)",
+    "macro": "F",
+    "uso": "Quando si montano spesso video brevi e si vuole automatizzare sottotitoli e tagli."
+  },
+  {
+    "id": 92,
+    "sito": "Apodex",
+    "url": "https://apodex.ai",
+    "categoria": "AI/Search",
+    "descrizione": "Servizio di ricerca approfondita che coordina squadre di agenti in parallelo e agenti di verifica delle fonti prima di consegnare il report; il framework agentico FrontierAgent è open source.",
+    "fonte": "simonestavolo.ai 29/06/2026 (reel DaLFjwDT2YH)",
+    "macro": "J",
+    "uso": "Quando serve una deep research con verifica incrociata delle fonti."
+  },
+  {
+    "id": 93,
+    "sito": "OmniSocials",
+    "url": "https://omnisocials.com",
+    "categoria": "Dev/Workflow",
+    "descrizione": "Servizio a pagamento (circa 10 $/mese) che collega Claude a una decina di social tramite connettore/MCP per creare, adattare e programmare post da un'unica chat.",
+    "fonte": "simonestavolo.ai 25/06/2026 (reel DaAqZ0RTQi_)",
+    "macro": "H",
+    "uso": "Quando si gestiscono contenuti su più social e si vuole pianificarli da Claude."
+  },
+  {
+    "id": 94,
+    "sito": "CoMaps",
+    "descrizione": "App di navigazione offline open source, fork comunitario e senza scopo di lucro di Organic Maps, basata su OpenStreetMap, senza tracker né servizi Google. Il codice è su Codeberg (comaps/comaps).",
+    "url": "https://www.comaps.app/",
+    "categoria": "Dev/Mobile",
+    "fonte": "devop.sbs 07/07/2026 (reel DafhcyTDGOz)",
+    "macro": "H",
+    "uso": "Quando vuoi mappe e navigazione offline sul telefono senza essere tracciato."
+  },
+  {
+    "id": 95,
     "sito": "agent-qa",
     "url": "https://vostride.com",
     "descrizione": "CLI di QA per web, Android e iOS tramite istruzioni in linguaggio naturale, con memoria persistente e auto-miglioramento. Richiede Node.js 24+. La CLI è gratuita; inferenza dei modelli e servizi opzionali per dispositivi hanno costi separati. FSL-1.1-ALv2 limita gli usi commerciali in concorrenza.",
