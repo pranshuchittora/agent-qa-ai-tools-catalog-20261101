@@ -280,5 +280,23 @@ class Unione(unittest.TestCase):
                            {'a/b': {'fetched': '2026-09-01', 'stars': 2}})
         self.assertEqual(m['a/b']['stars'], 1)
 
+class StatoProfili(unittest.TestCase):
+    """Un profilo che tiene `reel_scartati` rende conto di ogni reel visto: o e' catalogato, o
+    e' scartato con un motivo. Altrimenti la domanda «perche' non e' nel catalogo?» si ripropone."""
+
+    def test_reel_scartati(self):
+        for nome in ('instagram-profili.json', 'instagram-profili.local.json'):
+            for p in cd.carica(ROOT, nome, []):
+                if 'reel_scartati' not in p:
+                    continue
+                with self.subTest(file=nome, handle=p['handle']):
+                    scartati = p['reel_scartati']
+                    self.assertIsInstance(scartati, dict)
+                    for code, motivo in scartati.items():
+                        self.assertTrue(isinstance(motivo, str) and motivo.strip(), code)
+                    catalogati = set(p['reel_catalogati'])
+                    self.assertFalse(catalogati & set(scartati))
+                    self.assertEqual(set(p['reel_visti']), catalogati | set(scartati))
+
 if __name__ == '__main__':
     unittest.main()

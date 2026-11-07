@@ -4,8 +4,8 @@
 [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
 [![Python 3, stdlib only](https://img.shields.io/badge/python-3%20%C2%B7%20stdlib%20only-3776AB.svg?logo=python&logoColor=white)](scripts/)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-8A2BE2.svg)](https://agentskills.io)
-[![Catalog](https://img.shields.io/badge/catalog-725%20repos%20%2B%2045%20sites-success.svg)](CATALOGO-AI-TOOLS.md)
-[![Activity checked](https://img.shields.io/badge/activity%20checked-2026--10--15-informational.svg)](gh-meta.json)
+[![Catalog](https://img.shields.io/badge/catalog-1145%20repos%20%2B%2088%20sites-success.svg)](CATALOGO-AI-TOOLS.md)
+[![Activity checked](https://img.shields.io/badge/activity%20checked-2026--11--07-informational.svg)](gh-meta.json)
 
 Reads the reels and links you save in a WhatsApp chat (typically the "message yourself" chat) and
 the new reels of the Instagram creators already in the catalog, extracts **GitHub repositories**
@@ -28,17 +28,17 @@ otherwise); pick one directly: [Italiano](https://scrnetto.github.io/ai-tools-ca
 
 ## What the catalog holds
 <!-- catalogo:riepilogo -->
-- **725 GitHub repositories** + **45 websites**, in 10 practical categories:
-  - Coding agents, Claude Code & AI-assisted development (123)
-  - AI agent frameworks & personal assistants (84)
-  - LLMs, models & local inference (57)
-  - RAG, agent memory & knowledge bases (37)
-  - OCR & document parsing (21)
-  - Media generation (video, images, 3D, voice) (121)
-  - Security & supply chain (49)
-  - Dev tools, productivity & libraries (230)
-  - AI finance & trading (12)
-  - AI research, world models & vector data (36)
+- **1145 GitHub repositories** + **88 websites**, in 10 practical categories:
+  - Coding agents, Claude Code & AI-assisted development (183)
+  - AI agent frameworks & personal assistants (128)
+  - LLMs, models & local inference (99)
+  - RAG, agent memory & knowledge bases (48)
+  - OCR & document parsing (28)
+  - Media generation (video, images, 3D, voice) (202)
+  - Security & supply chain (67)
+  - Dev tools, productivity & libraries (403)
+  - AI finance & trading (16)
+  - AI research, world models & vector data (59)
 <!-- /catalogo:riepilogo -->
 - Almost every entry comes from an Instagram reel — saved in the chat, or found by monitoring the
   profiles of creators already in the catalog — and each entry records its source. Counts and
@@ -278,7 +278,7 @@ The token is read in this order — first match wins:
 | `github-repos.json` | Catalogued repos (`id, progetto, descrizione, url, categoria, fonte, macro, uso`; optional `licenza`, checked by hand on the LICENSE file, overrides GitHub's `NOASSERTION`) |
 | `siti-web.json` | Non-repo websites |
 | `gh-meta.json` | GitHub activity metadata, keyed by `owner/name` |
-| `instagram-profili.json` | Profile-monitoring state (reels already seen, per handle) |
+| `instagram-profili.json` | Profile-monitoring state, per handle: reels seen, catalogued, and discarded with the reason (`reel_scartati`) |
 | `*.local.json` | Your own entries and state, gitignored, merged at build time |
 | `traduzioni/` | Translations of the entries into en, es, de, fr — see [Translations](#translations) |
 | `docs/` | The generated web page, one per language, served by GitHub Pages |
